@@ -1,5 +1,5 @@
 # Youtube Dislike Button Count
-A project to return the youtube dislike count back to those who wish to view it.
+A project to return the youtube dislike button count back to those who wish to view it.
 
 Current platforms:
 - Chrome Web Store as an lightweight extension
