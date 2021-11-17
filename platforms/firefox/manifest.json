@@ -1,0 +1,29 @@
+{
+    "name": "YouTube Dislike Button Count",
+    "description": "Adds the YouTube dislike count back to all YouTube videos.",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "icons": {
+        "16": "./images/icon-16x16.png",
+        "32": "./images/icon-32x32.png",
+        "48": "./images/icon-48x48.png",
+        "128": "./images/icon-128x128.png"
+    },
+    "background": {
+        "scripts": ["./background.js"]
+    },
+    "browser_action": {
+        "default_popup": "./popup.html",
+        "default_icons": {
+            "16": "./images/icon-16x16.png",
+            "32": "./images/icon-32x32.png",
+            "48": "./images/icon-48x48.png",
+            "128": "./images/icon-128x128.png"
+        }
+    },
+    "permissions": [
+        "tabs",
+        "https://www.youtube.com/watch?v=*",
+        "https://s7vueecr2e.execute-api.us-east-1.amazonaws.com/prod?videoId=*"
+    ]
+}
