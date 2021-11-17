@@ -3,9 +3,7 @@ A project to return the Youtube dislike button count back to those who wish to v
 
 Currently available on:
 - Chrome Web Store
-
-Currently developing for:
-- Firefox Add-On Store
+- Firefox Add-On Store (PENDING APPROVAL)
 
 Future platforms:
 - Native Youtube app
