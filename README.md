@@ -5,13 +5,14 @@ A project to return the Youtube dislike button count back to those who wish to v
 - Chrome Web Store
 - Firefox Add-On Store (PENDING APPROVAL)
 
-## **Active work:**
-- Like/Dislike Sentiment bar
 
 ## **Future platforms:**
 - Native Youtube app
 - Gecko and Webkit-based browsers (I will ensure a version works for each)
 - Outdated web browsers (by request)
+
+## **Active work:**
+- Like/Dislike Sentiment bar
 
 ## **Known issues:**
 - Since YouTube has not rolled out dislike hiding for all accounts, using this extension while dislikes are not hidden creates small bugs. I will not fix these since they will be nullified come full rollout of dislike hiding.
