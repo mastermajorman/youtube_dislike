@@ -1,6 +1,20 @@
 body {
-  width:250px;
-  height: 100px;
+  width: 250px;
+  height: 175px;
+  padding: 0px 25px;
+}
+
+p {
+  font-size: 16px;
+  padding-right: 15%;
+}
+
+.dislikeEnableArea {
+  display: flex;
+}
+
+.label {
+  text-align: center;
 }
 
 .switch {
@@ -8,6 +22,7 @@ body {
   display: inline-block;
   width: 60px;
   height: 34px;
+  margin-top: 10px;
 }
 
 .switch input { 
@@ -54,15 +69,10 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-.label {
-    text-align: center;
 }

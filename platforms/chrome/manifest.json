@@ -1,7 +1,7 @@
 {
     "name": "YouTube Dislike Button Count",
     "description": "Adds the YouTube dislike count back to all YouTube videos.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "manifest_version": 3,
     "icons": {
         "16": "./images/icon-16x16.png",
@@ -23,7 +23,8 @@
     },
     "permissions": [
         "tabs",
-        "scripting"
+        "scripting",
+        "storage"
     ],
     "host_permissions": [
         "https://www.youtube.com/watch?v=*",

@@ -1,1 +1,3 @@
 images/sub*.png
+*.zip
+platforms/chrome/.vs/*

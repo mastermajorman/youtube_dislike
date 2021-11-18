@@ -1,29 +1,26 @@
-chrome.runtime.sendMessage({ 
+chrome.runtime.sendMessage({
     message: "get_dislikes"
 }, response => {
     // don't want to have to do this, but w/e
     setTimeout(function () {
         // setup
-        //console.log("DISLIKES: " + response.message.items[0].statistics.dislikeCount);
         let dislikeCount = response.message.items[0].statistics.dislikeCount;
 
-        let countArea = document.getElementsByClassName("style-scope ytd-menu-renderer force-icon-button style-text")[1].childNodes[0].childNodes[1];
+        let countArea = document.getElementsByClassName("style-scope ytd-menu-renderer force-icon-button")[1].childNodes[0].childNodes[1];
         countArea.innerText = intToString(dislikeCount);
 
-        let dislikeButton = document.getElementsByClassName("style-scope ytd-menu-renderer force-icon-button style-text")[1].childNodes[0].childNodes[0].childNodes[1];
-        //console.log(dislikeButton);
+        let dislikeButton = document.getElementsByClassName("style-scope ytd-menu-renderer force-icon-button")[1].childNodes[0].childNodes[0].childNodes[1];
+
+        // local value should change +1/-1
+        dislikeButton.addEventListener("click", function () {
+            if (dislikeButton.ariaPressed === "false") {
+                dislikeCount ++;
+            } else {
+                dislikeCount--;
+            }
+            countArea.innerText = intToString(dislikeCount);
+        });
     }, 500);
-
-    //account for user clicking dislike, local value should change +1/-1
-    dislikeButton.addEventListener("click", function () {
-        //console.log("button value: " + dislikeButton.ariaPressed);
-        if (dislikeButton.ariaPressed === "false") {
-            dislikeCount ++;
-        } else {
-            dislikeCount--;
-        }
-        countArea.innerText = intToString(dislikeCount);
-    });
 });
 
 function intToString(num) {
