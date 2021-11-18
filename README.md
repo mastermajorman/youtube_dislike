@@ -2,8 +2,8 @@
 A project to return the Youtube dislike button count back to those who wish to view it.
 
 ## **Currently available platforms:**
-- Chrome Web Store
-- Firefox Add-On Store (PENDING APPROVAL)
+- Chrome Web Store (https://chrome.google.com/webstore/detail/youtube-dislike-button-co/mjnhacklcfliofhdgnkemmkioinkhcnk)
+- Firefox Add-On Store (https://addons.mozilla.org/en-US/firefox/addon/youtube-dislike-button-count/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
 
 ## **Future platforms:**
