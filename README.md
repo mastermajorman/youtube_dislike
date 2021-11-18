@@ -7,7 +7,7 @@ Currently available on:
 
 Future platforms:
 - Native Youtube app
-- Gecko and Webkit-based browsers
+- Gecko and Webkit-based browsers (ensure a version works for each)
 - Outdated web browsers (by request)
 
 ![Screenshot](images/meme.png)
